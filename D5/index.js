@@ -182,106 +182,6 @@ const isTodayMyBirthday = function(){
 console.log(isTodayMyBirthday())
 // JS Arrays // Objs
 // NOTE: movies array is defined at the end of this file!
-
-/* Ex.11
-   Write a function called "deleteProp" which receives an object and a string as parameters, and returns the given object after deleting its property named as the given string.
-*/
-console.log(`-------------------------------------------------11`)
-const deleteProp = function (obj, str) {
-  delete obj[str]
-  return obj
-}
-//console.log(deleteProp(movies[1], `Poster`))
-
-/* Ex.12 
-    Write a function called "olderMovie" which finds the oldest movie in the array provided at the end of this file.
-*/
-console.log(`-------------------------------------------------12`)
-
-
-// const olderMovie = movies.reduce(function(oldestMovie, movie){
-//   return movie.Year<oldestMovie.Year ? movie : oldestMovie;
-// },movies[0]);
-// console.log(olderMovie)
-
-/* Ex.13
-    Write a function called "countMovies" which returns the number of movies contained in the array provided at the end of this file.
-*/
-console.log(`-------------------------------------------------13`)
-// let counter = 0;
-// for (let i = 0; i < movies.length; i++){
-//   counter++
-// }
-// console.log(counter)
-/* Ex.14
-    Write a function called "onlyTheTitles" which creates an array with just the titles of the movies provided in the array at the end of the file.
-*/
-console.log(`-------------------------------------------------14`)
-let arry = []
-const onlyTheTitles = function(){
-arry.push(movies.Title)
-  return arry
-}
-console.log(arry)
-/* Ex.15
-   Write a function called "onlyInThisMillennium" which returns only the movies produced in this millennium.
-*/
-console.log(`-------------------------------------------------15`)
-
-/* Ex.16 
-    Write a function called "getMovieById" which receives an id as a parameter and returns the movie with the given id.
-*/
-
-/* Ex.17
-    Write a function called "sumAllTheYears" which returns the sum of all the years in which the movies provided have been produced.
-*/
-
-/* Ex.18
-    Write a function called "searchByTitle" which receives a string as a parameter and returns all the movies which contain that string in the title.
-*/
-
-/* Ex.19
-    Write a function called "searchAndDivide" which receives a string as a parameter and returns an object;
-    this object should contain an array called "match", made by all the movies which contain the given string in the title,
-    and another array "unmatch" with all the remaining ones.
-*/
-
-/* Ex.20
-   Write a function called "removeIndex" which receives a number as a parameter and returns the movies array without the element in the given position.
-*/
-
-// [EXTRAS] JS Advanced
-
-/* Ex.21
-  Create a function called "halfTree" which receives a number as a parameter and builds an "*" half tree with the given height.
-  Example:
-  halfTree(3)
-  *
-  **
-  ***
-*/
-
-/* Ex.22 
-  Create a function called "tree" which receives a number as a parameter and builds an "*" tree with the given height.
-  Example: 
-  tree(3)
-    *  
-   *** 
-  *****
-*/
-
-/* Ex.23
-  Create a function called "isItPrime" that receives a number as a parameter and returns true if the given number is a prime number.
-*/
-
-/* This movies array is used throughout the exercises. Please don't change it :)  */
-
- //QUESTIONS:
-//USING RETURN IN FUNCTIONS, DO I ALWAYS NEED TO DO THIS, SHOULD I BE USING RETURN CONSOLE.LOG()?
-//CAN FUNCTION PARAMETERS BE GENERIC NAMES THAT CAN BE REUSED IN DIFFERENT FUNCTIONS WITHOUT AFFECTING CODE?
-// USING REGEX
-// how do i console log the result of a function, when i try it simply returns the datatype
-
 const movies = [
   {
     Title: "The Lord of the Rings: The Fellowship of the Ring",
@@ -396,3 +296,104 @@ const movies = [
       "https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_SX300.jpg",
   },
 ]
+/* Ex.11
+   Write a function called "deleteProp" which receives an object and a string as parameters, and returns the given object after deleting its property named as the given string.
+*/
+console.log(`-------------------------------------------------11`)
+const deleteProp = function (obj, str) {
+  delete obj[str]
+  return obj
+}
+console.log(deleteProp(movies[1], `Type`))
+
+/* Ex.12 
+    Write a function called "olderMovie" which finds the oldest movie in the array provided at the end of this file.
+*/
+console.log(`-------------------------------------------------12`)
+
+
+const olderMovie = movies.reduce(function(oldestMovie, movie){
+  return movie.Year<oldestMovie.Year ? movie : oldestMovie;
+},movies[0]);
+console.log(olderMovie)
+
+/* Ex.13
+    Write a function called "countMovies" which returns the number of movies contained in the array provided at the end of this file.
+*/
+console.log(`-------------------------------------------------13`)
+let counter = 0;
+for (let i = 0; i < movies.length; i++){
+  counter++
+}
+console.log(counter)
+/* Ex.14
+    Write a function called "onlyTheTitles" which creates an array with just the titles of the movies provided in the array at the end of the file.
+*/
+console.log(`-------------------------------------------------14`)
+let arry = []
+const onlyTheTitles = function(){
+  
+}
+console.log()
+/* Ex.15
+   Write a function called "onlyInThisMillennium" which returns only the movies produced in this millennium.
+*/
+console.log(`-------------------------------------------------15`)
+const onlyInThisMillenium = recent => {
+
+}
+
+/* Ex.16 
+    Write a function called "getMovieById" which receives an id as a parameter and returns the movie with the given id.
+*/
+
+/* Ex.17
+    Write a function called "sumAllTheYears" which returns the sum of all the years in which the movies provided have been produced.
+*/
+
+/* Ex.18
+    Write a function called "searchByTitle" which receives a string as a parameter and returns all the movies which contain that string in the title.
+*/
+
+/* Ex.19
+    Write a function called "searchAndDivide" which receives a string as a parameter and returns an object;
+    this object should contain an array called "match", made by all the movies which contain the given string in the title,
+    and another array "unmatch" with all the remaining ones.
+*/
+
+/* Ex.20
+   Write a function called "removeIndex" which receives a number as a parameter and returns the movies array without the element in the given position.
+*/
+
+// [EXTRAS] JS Advanced
+
+/* Ex.21
+  Create a function called "halfTree" which receives a number as a parameter and builds an "*" half tree with the given height.
+  Example:
+  halfTree(3)
+  *
+  **
+  ***
+*/
+
+/* Ex.22 
+  Create a function called "tree" which receives a number as a parameter and builds an "*" tree with the given height.
+  Example: 
+  tree(3)
+    *  
+   *** 
+  *****
+*/
+
+/* Ex.23
+  Create a function called "isItPrime" that receives a number as a parameter and returns true if the given number is a prime number.
+*/
+
+/* This movies array is used throughout the exercises. Please don't change it :)  */
+
+ //QUESTIONS:
+//USING RETURN IN FUNCTIONS, DO I ALWAYS NEED TO DO THIS, SHOULD I BE USING RETURN CONSOLE.LOG()?
+//CAN FUNCTION PARAMETERS BE GENERIC NAMES THAT CAN BE REUSED IN DIFFERENT FUNCTIONS WITHOUT AFFECTING CODE?
+// USING REGEX
+// how do i console log the result of a function, when i try it simply returns the datatype
+
