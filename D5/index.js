@@ -330,11 +330,11 @@ console.log(counter)
     Write a function called "onlyTheTitles" which creates an array with just the titles of the movies provided in the array at the end of the file.
 */
 console.log(`-------------------------------------------------14`)
-let arry = []
-const onlyTheTitles = function(){
-  
-}
+
+const onlyTheTitles = movies.filter(movies =>{ return movies.Title})
 console.log()
+
+
 /* Ex.15
    Write a function called "onlyInThisMillennium" which returns only the movies produced in this millennium.
 */
