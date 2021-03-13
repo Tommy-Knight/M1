@@ -312,16 +312,13 @@ console.table(deleteProp(movies[1], `Type`))
 console.log(`-------------------------------------------------12`)
 
 
-const olderMovie = movies.reduce(function(oldestMovie, movie){
-  return movie.Year<oldestMovie.Year ? movie : oldestMovie;
-},movies[0]);
+const olderMovie = movies.reduce((o, m) => m.Year<o.Year ? m : o)
 console.table(olderMovie)
-
 /* Ex.13
     Write a function called "countMovies" which returns the number of movies contained in the array provided at the end of this file.
 */
 console.log(`-------------------------------------------------13`)
-let counter = 0;
+let counter = 0
 for (let i = 0; i < movies.length; i++){
   counter++
 }
@@ -331,17 +328,10 @@ console.log(counter)
 */
 console.log(`-------------------------------------------------14`)
 
-const onlyTheTitles = movies.filter(movies =>{ return movies.Title})
-console.log()
-
-
 /* Ex.15
    Write a function called "onlyInThisMillennium" which returns only the movies produced in this millennium.
 */
 console.log(`-------------------------------------------------15`)
-const onlyInThisMillenium = recent => {
-
-}
 
 /* Ex.16 
     Write a function called "getMovieById" which receives an id as a parameter and returns the movie with the given id.

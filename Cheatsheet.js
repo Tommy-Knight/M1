@@ -51,7 +51,7 @@ String.substring()      //Also similar to slice() but can’t accept negative in
 String.toLowerCase()    //Convert strings to lower case
 String.toUpperCase()    //Convert strings to upper case
 String.valueOf()        //Returns the primitive value (that has no properties or methods) of a string object
-
+String.length()         // returns length of the string
 `✼　 ҉ 　✼　 ҉ 　✼　 ҉ 　✼　 ҉ 　✼　 OBJECTS 　✼　 ҉ 　✼　 ҉ 　✼　 ҉ 　✼　 ҉ 　✼`
 
 Object.keys()   //creates an array containing the keys of an object
@@ -141,8 +141,10 @@ a <= b , a >= b         // less or equal, greater or eq
 a += b                  // a = a + b (works with - * %...)
 a && b                  // logical and
 a || b                  // logical or
-?                       // ternary operator
+?                      // ternary operator , you can use :null to return no falsy
 ()=>{}                  // arrow function 
+
+// var,let,const      const uses least memory so should be used if possible
 
 
 <+><+><+><+><+><+><+><+><+><+><+><+><+><+><+><+><+><+><+><+><+><+><+><+><+><+><+><+>

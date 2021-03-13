@@ -112,29 +112,16 @@ cutString(`howdy`)
 /* EXERCISE 10
 Write a function "giveMeRandom" which accepts a number n and returns an array containing n random numbers between 0 and 10.
 */
+console.log(`----------------------------------`)
 
-console.log(`hi`)
-
-const giveMeRandom = function(n){
-    let myArray = []
-    for (let i=0; i<n; i++){
-        myArray.push(Math.round(Math.random()*10))
-    }
-    console.log(myArray)
-}
-n(5)
-
-let myArray = []
-myArray.push(5,6,7)
-console.log(myArray)
-//     const giveMeRandom = function(n){
-//         let randomNumbers = [];
-//         for(let i=0; i<n; i++){
-//             randomNumbers.push(Math.floor(Math.random()*10))
-//         }
-//         return console.log(randomNumbers)
-// }
-// giveMeRandom(7)
+let rand0 = []
+const giveMeRandom = function (n) {
+    for (let i = 0; i < n; i++) {
+        rand0.push(Math.round(Math.random() * 10))
+    } 
+}   
+giveMeRandom(5)
+console.log(rand0)
 /* WHEN YOU ARE FINISHED
 Commit and push the code to your personal GitHub repository and share the link to your commit in Eduflow.
 */
