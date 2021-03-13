@@ -83,9 +83,9 @@ Math.floor(Math.random() * 5) + 1;  //random integer, from 1 to 5
 
 `✼　 ҉ 　✼　 ҉ 　✼　 ҉ 　✼　 ҉ 　✼　 DATES 　✼　 ҉ 　✼　 ҉ 　✼　 ҉ 　✼　 ҉ 　✼`
 
-let d = new Date();
-a = d.getDay();             //getting the weekday
-let d = new Date();
+let d = new Date()
+a = d.getDay()           `` //getting the weekday
+let d = new Date()
 d.setDate(d.getDate() + 7); //adds a week to a date
 
 Date.getDate()          //day as a number (1-31)
