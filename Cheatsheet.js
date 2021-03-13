@@ -7,50 +7,50 @@
 `✼　 ҉ 　✼　 ҉ 　✼　 ҉ 　✼　 ҉ 　✼　 ARRAYS 　✼　 ҉ 　✼　 ҉ 　✼　 ҉ 　✼　 ҉ 　✼`
 
 // To add/remove elements:
-Array.shift()       //extracts an item from the beginning
-Array.unshift()     //adds items to the beginning 
-Array.push()        //adds items to the end 
-Array.pop()         //extracts an item from the end 
-Array.concat()      //adds/combines arrays to give a new array
+Array.shift()               //extracts an item from the beginning
+Array.unshift()             //adds items to the beginning 
+Array.push()                //adds items to the end 
+Array.pop()                 //extracts an item from the end 
+Array.concat()              //adds/combines arrays to give a new array
 Array.splice(pos, deleteThis, ...items) //at index pos deletes deleteThis elements and inserts items 
 Array.slice(start, end) //gives new array, copies elements from index start till end (not inclusive) into it 
 // To search among elements:
-Array.indexOf(item, pos) //look for item starting from position pos, return the index or -1 if not found 
-Array.lastIndexOf(item, pos) //look for item starting from position pos, return the index or -1 if not found 
-Array.includes(value) //returns true if the array has value, otherwise false
-Array.find(func)    //filter elements through the function, return first value that make it return true
-Array.filter(func)  //filter elements through the function, return all values that make it return true
-Array.findIndex()   //is like find, but returns the index instead of a value
-Array.valueOf()     //Returns the primitive value of the specified object
-Array,isArray()     //returns true if an array
+Array.indexOf(item, pos)    //look for item starting from position pos, return the index or -1 if not found 
+Array.lastIndexOf(item, pos)//look for item starting from position pos, return the index or -1 if not found 
+Array.includes(value)       //returns true if the array has value, otherwise false
+Array.find(func)            //filter elements through the function, return first value that make it return true
+Array.filter(func)          //filter elements through the function, return all values that make it return true
+Array.findIndex()           //is like find, but returns the index instead of a value
+Array.valueOf()             //Returns the primitive value of the specified object
+Array,isArray()             //returns true if an array
 // other stuff:
-Array.forEach(func) //executes a provided function once for each array element// arr.forEach(item => {console.log(item)})
-Array.map(func)     //creates a new array from results of calling func for every element
-Array.reverse()     //reverses the array in-place, then returns it
-Array.join()        //turns array into string
-Array.sort()        //sorts elements alphabetically
+Array.forEach(func)         //executes a provided function once for each array element// arr.forEach(item => {console.log(item)})
+Array.map(func)             //creates a new array from results of calling func for every element
+Array.reverse()             //reverses the array in-place, then returns it
+Array.join()                //turns array into string
+Array.sort()                //sorts elements alphabetically
 Array.reduce(func, initial) //executes a provided function for each value of the array to give a single array back. converts an array of objects into a single object
-Array.some(func)    //tests whether at least one element in the array passes the test implemented by the provided function
-Array.every()       //tests whether at every element in the array passes the test implemented by the provided function
+Array.some(func)            //tests whether at least one element in the array passes the test implemented by the provided function
+Array.every()               //tests whether at every element in the array passes the test implemented by the provided function
 
 `✼　 ҉ 　✼　 ҉ 　✼　 ҉ 　✼　 ҉ 　✼　 STRINGS 　✼　 ҉ 　✼　 ҉ 　✼　 ҉ 　✼　 ҉ 　✼`
 
-String.charAt()     //Returns a character at a specified position inside a string
-String.charCodeAt() //Gives you the Unicode of a character at that position
-String.concat()     //Concatenates (joins) two or more strings into one
-String.fromCharCode()//Returns a string created from the specified sequence of UTF-16 code units
-String.indexOf()    //Provides the position of the first occurrence of a specified text within a string
-String.lastIndexOf()//Same as indexOf() but with the last occurrence, searching backward
-String.match()      //Retrieves the matches of a string against a search pattern
-String.replace()    //Find and replace specified text in a string
-String.search()     //Executes a search for a matching text and returns its position
-String.slice()      //Extracts a section of a string and returns it as a new string
-String.split()      //Splits a string object into an array of strings at a specified position
-String.substr()     //Similar to slice() but extracts a substring depending on a specified number of characters
-String.substring()  //Also similar to slice() but can’t accept negative indices
-String.toLowerCase()//Convert strings to lower case
-String.toUpperCase()//Convert strings to upper case
-String.valueOf()    //Returns the primitive value (that has no properties or methods) of a string object
+String.charAt()         //Returns a character at a specified position inside a string
+String.charCodeAt()     //Gives you the Unicode of a character at that position
+String.concat()         //Concatenates (joins) two or more strings into one
+String.fromCharCode()   //Returns a string created from the specified sequence of UTF-16 code units
+String.indexOf()        //Provides the position of the first occurrence of a specified text within a string
+String.lastIndexOf()    //Same as indexOf() but with the last occurrence, searching backward
+String.match()          //Retrieves the matches of a string against a search pattern
+String.replace()        //Find and replace specified text in a string
+String.search()         //Executes a search for a matching text and returns its position
+String.slice()          //Extracts a section of a string and returns it as a new string
+String.split()          //Splits a string object into an array of strings at a specified position
+String.substr()         //Similar to slice() but extracts a substring depending on a specified number of characters
+String.substring()      //Also similar to slice() but can’t accept negative indices
+String.toLowerCase()    //Convert strings to lower case
+String.toUpperCase()    //Convert strings to upper case
+String.valueOf()        //Returns the primitive value (that has no properties or methods) of a string object
 
 `✼　 ҉ 　✼　 ҉ 　✼　 ҉ 　✼　 ҉ 　✼　 OBJECTS 　✼　 ҉ 　✼　 ҉ 　✼　 ҉ 　✼　 ҉ 　✼`
 
