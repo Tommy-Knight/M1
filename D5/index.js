@@ -304,7 +304,7 @@ const deleteProp = function (obj, str) {
   delete obj[str]
   return obj
 }
-console.log(deleteProp(movies[1], `Type`))
+console.table(deleteProp(movies[1], `Type`))
 
 /* Ex.12 
     Write a function called "olderMovie" which finds the oldest movie in the array provided at the end of this file.
@@ -315,7 +315,7 @@ console.log(`-------------------------------------------------12`)
 const olderMovie = movies.reduce(function(oldestMovie, movie){
   return movie.Year<oldestMovie.Year ? movie : oldestMovie;
 },movies[0]);
-console.log(olderMovie)
+console.table(olderMovie)
 
 /* Ex.13
     Write a function called "countMovies" which returns the number of movies contained in the array provided at the end of this file.
@@ -397,3 +397,8 @@ const onlyInThisMillenium = recent => {
 // USING REGEX
 // how do i console log the result of a function, when i try it simply returns the datatype
 
+// const deletePoster = function (obj, str) {
+//   delete obj[str]
+//   return obj
+// }
+// console.table(deletePoster(movies, `Poster`))
