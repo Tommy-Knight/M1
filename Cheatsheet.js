@@ -26,13 +26,13 @@ Array,isArray()             //returns true if an array
 // other stuff:
 Array.forEach(func)         //executes a provided function once for each array element// arr.forEach(item => {console.log(item)})
 Array.map(func)             //creates a new array from results of calling func for every element
+Array.reduce(func, initial) //executes a provided function for each value of the array to give a single array back. converts an array of objects into a single object
 Array.reverse()             //reverses the array in-place, then returns it
 Array.join()                //turns array into string
 Array.sort()                //sorts elements alphabetically
-Array.reduce(func, initial) //executes a provided function for each value of the array to give a single array back. converts an array of objects into a single object
 Array.some(func)            //tests whether at least one element in the array passes the test implemented by the provided function
 Array.every()               //tests whether at every element in the array passes the test implemented by the provided function
-
+Array.from(array, func)     //creates an array from elements then allows you to execute a map() function on each element of the array being created
 `✼　 ҉ 　✼　 ҉ 　✼　 ҉ 　✼　 ҉ 　✼　 STRINGS 　✼　 ҉ 　✼　 ҉ 　✼　 ҉ 　✼　 ҉ 　✼`
 
 String.charAt()         //Returns a character at a specified position inside a string
@@ -59,8 +59,6 @@ Object.values() //creates an array containing the values of an object
 Object.freeze() //prevents properties from being added, removed or modified from an object
 Object.seal()   //prevents new properties from being added to an object, but allows the modification of existing properties
 Object.create() //method is used to create a new object and link it to the prototype of an existing object
-Object.keys()   //creates an array containing the keys of an object
-Object.values() //creates an array containing the values of an object
 Object.assign() //combines two objects into one new object
 
 `✼　 ҉ 　✼　 ҉ 　✼　 ҉ 　✼　 ҉ 　✼　 MATH 　✼　 ҉ 　✼　 ҉ 　✼　 ҉ 　✼　 ҉ 　✼`
@@ -141,8 +139,8 @@ a <= b , a >= b         // less or equal, greater or eq
 a += b                  // a = a + b (works with - * %...)
 a && b                  // logical and
 a || b                  // logical or
-?                      // ternary operator , you can use :null to return no falsy
-()=>{}                  // arrow function 
+?                       // ternary operator , you can use :null to return no falsy
+()=>{if}                // arrow function for shorthand function
 
 // var,let,const      const uses least memory so should be used if possible
 

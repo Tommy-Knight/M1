@@ -153,6 +153,7 @@ const rollTheDices = function(n){
     console.log(`Sum: ${diceSum}`)
     return diceSum, myArray
 }
+v =>
 console.log(rollTheDices(3))
 /* Ex.9
    Write a function called "howManyDays" which receives a date as a parameter and should return the number of days passed since that date.
@@ -327,34 +328,80 @@ console.log(counter)
     Write a function called "onlyTheTitles" which creates an array with just the titles of the movies provided in the array at the end of the file.
 */
 console.log(`-------------------------------------------------14`)
+let titt = []
+const onlyTheTitles = movies.map(check => titt.push(check.Title))
+console.table(titt)
 
 /* Ex.15
    Write a function called "onlyInThisMillennium" which returns only the movies produced in this millennium.
 */
 console.log(`-------------------------------------------------15`)
+let milly = []
+const onlyInThisMillennium = movies.map(check =>{if (parseInt(check.Year) > 1999) milly.push(check)})
+console.table(milly)
 
 /* Ex.16 
     Write a function called "getMovieById" which receives an id as a parameter and returns the movie with the given id.
 */
 
+console.log(`-------------------------------------------------16`)
+let yourMovie = []
+id = "tt4154796"
+const getMovieById = movies.forEach(n =>{if(n.imdbID === id ) yourMovie.push(n)})
+console.table(yourMovie)
+
 /* Ex.17
     Write a function called "sumAllTheYears" which returns the sum of all the years in which the movies provided have been produced.
 */
+console.log(`-------------------------------------------------17`)
+
+let total = 0
+const sumAllTheYears = movies.forEach(item => total += parseInt(item.Year))
+console.log(total)
 
 /* Ex.18
     Write a function called "searchByTitle" which receives a string as a parameter and returns all the movies which contain that string in the title.
 */
+console.log(`-------------------------------------------------18`)
 
+let titels = []
+let search = `ord`
+
+const searchByTitle = n => movies.forEach(n=>{if (n.Title.toLowerCase().includes(search)) titels.push(n)})
+searchByTitle()
+
+console.table(titels)
 /* Ex.19
     Write a function called "searchAndDivide" which receives a string as a parameter and returns an object;
     this object should contain an array called "match", made by all the movies which contain the given string in the title,
     and another array "unmatch" with all the remaining ones.
 */
+console.log(`-------------------------------------------------19`)
 
+let hmm = `ord`
+let goodMatch = []
+let badMatch = []
+
+let searchAndDivide = n => movies.forEach(n=>(n.Title.toLowerCase().includes(hmm))? goodMatch.push(n): badMatch.push(n))
+searchAndDivide()
+
+console.table(badMatch)
+console.table(goodMatch)
 /* Ex.20
    Write a function called "removeIndex" which receives a number as a parameter and returns the movies array without the element in the given position.
 */
+console.log(`-------------------------------------------------20`)
+let cleanPoster = []
+let number = 1
 
+// help
+// const removeIndex = movies.forEach(n =>{if n.findIndex(number) === number} () cleanPoster.push(n)})
+// const removeIndex = n =>{if (n.indexOf() === number)cleanPoster.push(n)}
+// const removeIndex = movies.forEach(movies, number => (movies.indexOf(movies[number]) !== number)? cleanPoster.push(movies[number]): null)
+// console.log(cleanPoster)
+// console.log(movies.indexOf(movies[4]))
+
+console.log(cleanPoster)
 // [EXTRAS] JS Advanced
 
 /* Ex.21
@@ -366,6 +413,8 @@ console.log(`-------------------------------------------------15`)
   ***
 */
 
+console.log(`-------------------------------------------------21`)
+
 /* Ex.22 
   Create a function called "tree" which receives a number as a parameter and builds an "*" tree with the given height.
   Example: 
@@ -375,10 +424,12 @@ console.log(`-------------------------------------------------15`)
   *****
 */
 
+console.log(`-------------------------------------------------22`)
 /* Ex.23
   Create a function called "isItPrime" that receives a number as a parameter and returns true if the given number is a prime number.
 */
 
+console.log(`-------------------------------------------------23`)
 /* This movies array is used throughout the exercises. Please don't change it :)  */
 
  //QUESTIONS:

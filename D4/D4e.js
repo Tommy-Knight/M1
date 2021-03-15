@@ -80,7 +80,7 @@ es.: ["strive", "is", "great"] => [6, 2, 5]
 console.log(`✼　 ҉ 　✼　 ҉ 　✼　 ҉ 　✼　 ҉ 　✼　 ҉ 　E8　 ҉ 　✼　 ҉ 　✼　 ҉ 　✼　 ҉ 　✼　 ҉ 　✼`)
 let strive = ["strive", "is", "great"]
 let newb = []
-let replaCe = strive.forEach(v => newb.push(v.length))
+strive.forEach(v => newb.push(v.length))
 console.log(newb)
 
 /* WHEN YOU ARE FINISHED
