@@ -21,5 +21,5 @@ addClass()
 
 function invisibility(){
     let toggler = document.querySelectorAll(".photo")
-    toggler.forEach(pic => pic.classList.toggle("status"))
+    toggler.forEach(pic => pic.classList.toggle("hide"))
 }

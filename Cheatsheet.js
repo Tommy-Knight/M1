@@ -56,12 +56,12 @@ String.length()         // returns length of the string
 
 `✼　 ҉ 　✼　 ҉ 　✼　 ҉ 　✼　 ҉ 　✼　 OBJECTS 　✼　 ҉ 　✼　 ҉ 　✼　 ҉ 　✼　 ҉ 　✼`
 
-Object.keys()   //creates an array containing the keys of an object
-Object.values() //creates an array containing the values of an object
-Object.freeze() //prevents properties from being added, removed or modified from an object
-Object.seal()   //prevents new properties from being added to an object, but allows the modification of existing properties
-Object.create() //method is used to create a new object and link it to the prototype of an existing object
-Object.assign() //combines two objects into one new object
+Object.keys()       //creates an array containing the keys of an object
+Object.values()     //creates an array containing the values of an object
+Object.freeze()     //prevents properties from being added, removed or modified from an object
+Object.seal()       //prevents new properties from being added to an object, but allows the modification of existing properties
+Object.create()     //method is used to create a new object and link it to the prototype of an existing object
+Object.assign()     //combines two objects into one new object
 
 `✼　 ҉ 　✼　 ҉ 　✼　 ҉ 　✼　 ҉ 　✼　 MATH 　✼　 ҉ 　✼　 ҉ 　✼　 ҉ 　✼　 ҉ 　✼`
 
