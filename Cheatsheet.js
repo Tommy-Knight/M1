@@ -12,8 +12,8 @@ Array.unshift()             //adds items to the beginning
 Array.push()                //adds items to the end 
 Array.pop()                 //extracts an item from the end 
 Array.concat()              //adds/combines arrays to give a new array
-Array.splice(pos, deleteThis, ...items) //at index pos deletes deleteThis elements and inserts items 
-Array.slice(start, end) //gives new array, copies elements from index start till end (not inclusive) into it 
+Array.splice(i, deleteThis, ...items) //at index pos deletes deleteThis elements and inserts items 
+Array.slice(start, end)     //gives new array, copies elements from index start till end (not inclusive) into it 
 // To search among elements:
 Array.indexOf(item, pos)    //look for item starting from position pos, return the index or -1 if not found 
 Array.lastIndexOf(item, pos)//look for item starting from position pos, return the index or -1 if not found 
@@ -33,6 +33,7 @@ Array.sort()                //sorts elements alphabetically
 Array.some(func)            //tests whether at least one element in the array passes the test implemented by the provided function
 Array.every()               //tests whether at every element in the array passes the test implemented by the provided function
 Array.from(array, func)     //creates an array from elements then allows you to execute a map() function on each element of the array being created
+
 `✼　 ҉ 　✼　 ҉ 　✼　 ҉ 　✼　 ҉ 　✼　 STRINGS 　✼　 ҉ 　✼　 ҉ 　✼　 ҉ 　✼　 ҉ 　✼`
 
 String.charAt()         //Returns a character at a specified position inside a string
@@ -52,6 +53,7 @@ String.toLowerCase()    //Convert strings to lower case
 String.toUpperCase()    //Convert strings to upper case
 String.valueOf()        //Returns the primitive value (that has no properties or methods) of a string object
 String.length()         // returns length of the string
+
 `✼　 ҉ 　✼　 ҉ 　✼　 ҉ 　✼　 ҉ 　✼　 OBJECTS 　✼　 ҉ 　✼　 ҉ 　✼　 ҉ 　✼　 ҉ 　✼`
 
 Object.keys()   //creates an array containing the keys of an object
