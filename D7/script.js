@@ -23,17 +23,15 @@ changeUrls("https://www.google.com")
 //5
 const addToTheSecond = newStuff =>{
     let newLi = document.createElement("li")
-    let texty = document.createTextNode(newStuff)
-    newLi.appendChild(texty)
-    document.getElementById("secondList").appendChild(newLi)
+    let texty = newLi.innerHTML = newStuff
+    document.getElementById("secondList").append(texty)
 }
 addToTheSecond("Hello this is an addition")
 //6
 const addParagraph = newstuff =>{
     let newP = document.createElement("p")
-    let texti = document.createTextNode(newstuff)
-    newP.appendChild(texti)
-    document.getElementById("paragraph").appendChild(newP)
+    let words = newP.innerText = newstuff
+    document.getElementById("paragraph").append(words)
 }
 addParagraph("This is a new paragraph")
 //7

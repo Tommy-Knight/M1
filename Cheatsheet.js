@@ -109,13 +109,14 @@ Date.setTime()          //milliseconds since 1970)
 `✼　 ҉ 　✼　 ҉ 　✼　 ҉ 　✼　 ҉ 　✼　 DOM MANIPULATION 　✼　 ҉ 　✼　 ҉ 　✼　 ҉ 　✼　 ҉ 　✼`
 
 // To search the DOM
+let element = document.selectElementsByTagName("div")
 document.querySelector()            // calls the first node with the called CSS selector  // use #id or .class
 document.querySelectorAll()         // calls all nodes with the selector
 document.getElementsByTagName()     // calls a list of elements with the tag selector
-document.getElementsByClassName()   //
-document.getElementsByName()        //
-document.getElementById()           //
-element.children =                  // returns all the children nodes of the element
+document.getElementsByClassName()   // calls a list of elements with the class selector
+document.getElementsByName()        // calls a list of elements with the name selector
+document.getElementById()           // calls the single element with the ID selector
+document.children =                  // returns all the children nodes of the element
 element.parentElement =             // returns parent element of element
 element.nextElementSibling =        // selects the next element inside the parent
 // To Manipulate the DOM
@@ -136,6 +137,9 @@ element.classList.add("bloblob")    // adds the class bloblob to the element
 element.classList.remove("bloblob") // removes the class bloblob from the element
 element.classList.toggle()          // to toggle the adding or removing of attributes based on boolean
 element.style.backgroundColor =     // to change css styles
+
+// tip: using array.from(document.querySelectorAll()) will let you use a .forEach statement with the list of nodes for if you hate using loops like me.
+
 
 // Additionally:
 
