@@ -106,6 +106,37 @@ Date.setMonth()         //month (0-11)
 Date.setSeconds()       //seconds (0-59)
 Date.setTime()          //milliseconds since 1970)
 
+`✼　 ҉ 　✼　 ҉ 　✼　 ҉ 　✼　 ҉ 　✼　 DOM MANIPULATION 　✼　 ҉ 　✼　 ҉ 　✼　 ҉ 　✼　 ҉ 　✼`
+
+// To search the DOM
+document.querySelector()            // calls the first node with the called CSS selector  // use #id or .class
+document.querySelectorAll()         // calls all nodes with the selector
+document.getElementsByTagName()     // calls a list of elements with the tag selector
+document.getElementsByClassName()   //
+document.getElementsByName()        //
+document.getElementById()           //
+element.children =                  // returns all the children nodes of the element
+element.parentElement =             // returns parent element of element
+element.nextElementSibling =        // selects the next element inside the parent
+// To Manipulate the DOM
+document.createElement("div")       // creates a <div></div> element
+element.append()                    // adds something to the end of an element
+element.closest()                   // selects closest parent node with the selector
+element.textContent =               // all content within element tags
+element.innerText =                 // checks content for css visibility etc. before returning what's in the tag
+element.innerHTML =                 // to add html with a string element.innerHTML ="<em> wow </em>"   //prone to security flaws?
+element.remove()                    // removes element
+element.removeChild()               // removes first child
+element.removeChildren()            // removes all children of element
+element.setAttribute("id","blahblah")//sets the id of an element to blahblah
+element.removeAttribute("id")       // removes id attribute
+element.id("blahblah")              // sets the id of an element to blahblah
+element.class("blahblah")           // sets the class of an element to blahblah
+element.classList.add("bloblob")    // adds the class bloblob to the element
+element.classList.remove("bloblob") // removes the class bloblob from the element
+element.classList.toggle()          // to toggle the adding or removing of attributes based on boolean
+element.style.backgroundColor =     // to change css styles
+
 // Additionally:
 
 parseInt(`3.5 days`)    //returns the first number: 3

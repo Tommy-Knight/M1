@@ -10,7 +10,7 @@ const addClassToTitle = newClass =>{
 }
 addClassToTitle()
 //3
-const changePcontent = (newCont) =>{
+const changePcontent = newCont =>{
     document.querySelectorAll("div p")[0].innerText = newCont;
 }
 changePcontent("This is new content")
@@ -21,18 +21,18 @@ const changeUrls = n =>{
 }
 changeUrls("https://www.google.com")
 //5
-const addToTheSecond = (newStuff) =>{
+const addToTheSecond = newStuff =>{
     let newLi = document.createElement("li")
-    let text = document.createTextNode(newStuff)
-    newLi.appendChild(text)
+    let texty = document.createTextNode(newStuff)
+    newLi.appendChild(texty)
     document.getElementById("secondList").appendChild(newLi)
 }
 addToTheSecond("Hello this is an addition")
 //6
-const addParagraph = (newstuff) =>{
+const addParagraph = newstuff =>{
     let newP = document.createElement("p")
-    let text = document.createTextNode(newstuff)
-    newP.appendChild(text)
+    let texti = document.createTextNode(newstuff)
+    newP.appendChild(texti)
     document.getElementById("paragraph").appendChild(newP)
 }
 addParagraph("This is a new paragraph")
