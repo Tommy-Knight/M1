@@ -1,0 +1,10 @@
+.myHeading {
+    color: red;
+  }
+
+.hidden{
+  visibility: hidden;
+}
+.green{
+  background-color: rgb(125, 177, 125)
+}
