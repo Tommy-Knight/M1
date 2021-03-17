@@ -57,6 +57,7 @@ The have a list of tasks and can, at any time, add a new one, delete one or sort
         Create a button "Remove First Task" to trigger the method "removeFirst"
         -->
     <input class= "button" type="button" value="Remove First Task" onclick="removeFirst()" />
+    <input class= "button" type="button" value="Console.log Tasks" onclick="getTasksAsArray()" />
 
     <ul id="myTaskList" class="myTaskList"></ul>
 
@@ -85,8 +86,8 @@ The have a list of tasks and can, at any time, add a new one, delete one or sort
         const addNewTask = () => {
             let newLi = document.createElement("li")
             let newTask = document.getElementById("taskInput").value
-            let input = newLi.innerHTML = newTask
-            document.getElementById("myTaskList").append(input)
+            newLi.append(newTask)
+            document.getElementById("myTaskList").appendChild(newLi)
         }
     
       /* EXERCISE 6: 
@@ -108,15 +109,16 @@ The have a list of tasks and can, at any time, add a new one, delete one or sort
                Create a method "getTasksAsArray" which returns, and prints to the console an array containing the tasks as string
             */
         const getTasksAsArray = () => {
-            let taskArray = documents.getElementById("myTaskList")
-            console.log(taskArray.innertext)
+           console.log(document.getElementsByTagName("li"))
         }
         getTasksAsArray()
+
       /* EXERCISE 9:
                Create a method "changeTaskBackgroundColor" which takes the color from the color picker with an 
                onchange event listener ad applies it as background to every list item
             */
-
+        document.getElementById("colorPicker")
+        
       /* EXTRA */
 
       /* EXERCISE 10: 
