@@ -116,19 +116,16 @@ document.getElementsByTagName()     // calls a list of elements with the tag sel
 document.getElementsByClassName()   // calls a list of elements with the class selector
 document.getElementsByName()        // calls a list of elements with the name selector
 document.getElementById()           // calls the single element with the ID selector
-document.children =                  // returns all the children nodes of the element
+element.children =                  // returns all the children nodes of the element
 element.parentElement =             // returns parent element of element
 element.nextElementSibling =        // selects the next element inside the parent
 // To Manipulate the DOM
 document.createElement("div")       // creates a <div></div> element
 element.append()                    // adds something to the end of an element
 element.closest()                   // selects closest parent node with the selector
-element.textContent =               // all content within element tags
-element.innerText =                 // checks content for css visibility etc. before returning what's in the tag
-element.innerHTML =                 // to add html with a string element.innerHTML ="<em> wow </em>"   //prone to security flaws?
 element.remove()                    // removes element
 element.removeChild()               // removes first child
-element.removeChildren()            // removes all children of element
+element.removeChildren()            // removes all children
 element.setAttribute("id","blahblah")//sets the id of an element to blahblah
 element.removeAttribute("id")       // removes id attribute
 element.id("blahblah")              // sets the id of an element to blahblah
@@ -137,6 +134,9 @@ element.classList.add("bloblob")    // adds the class bloblob to the element
 element.classList.remove("bloblob") // removes the class bloblob from the element
 element.classList.toggle()          // to toggle the adding or removing of attributes based on boolean
 element.style.backgroundColor =     // to change css styles
+element.textContent =               // all content within element tags
+element.innerText =                 // checks content for css visibility etc. before returning what's in the tag
+element.innerHTML =                 // to add html with a string element.innerHTML ="<em> wow </em>"   //prone to security flaws?
 
 // tip: using array.from(document.querySelectorAll()) will let you use a .forEach statement with the list of nodes for if you hate using loops like me.
 
