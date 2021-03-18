@@ -1,0 +1,23 @@
+body{
+    text-align: center;
+}
+h1 {
+    font-family:'Courier New', Courier, monospace ;
+    color: rgb(255, 255, 255);
+    font-size: 100px;
+    margin: 0;
+    text-shadow: 1px 1px 1px #eee, 2px 2px 6px #999;
+}
+
+/* .row {
+    border: 1px solid black;
+} */
+
+.cell {
+    border: 1px solid black;
+    width: 20px;
+}
+
+.bingoBoard{
+    border: 1px solid black;
+}
