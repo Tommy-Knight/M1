@@ -9,34 +9,9 @@
 </head>
 <body>
     <header><h1>BINGO BINGO BINGO BABY</h1></header>
-    <button id="button"> Click me for a random random number</button>
-    <div id = "bingoBoard"></div>  
-    <script>
+    <button id="button" class="button"> Click me for a random random number </button>
+    <div id = "bingoBoard" class= "bingoBoard"></div>
 
-    
-    function createBoard(){
-        const bingoBoard = document.getElementById("bingoBoard")
-        for(let i=0; i<76; i++) {
-            const cell = document.createElement("div")
-            cell.classList.add('cell')
-            cell.innerText = i+ 1
-            bingoBoard.appendChild(cell)
-        }   
-    }   
-    window.onload=function(){
-        createBoard()
-    }
-    randomNum = Math.floor(Math.random() * 76) + 1
-    let button = document.getElementById("button")
-    console.log(randomNum)
-    button.onclick = () =>{
-        button.innerHTML = randomNum
-        bingoBoard.children[randomNum-1].classList.add("highlight") 
-    }
-
-
-    
-    // struggled a lot with approach here.
-    </script>   
+    <script src="script.js"></script>   
 </body>
 </html>
