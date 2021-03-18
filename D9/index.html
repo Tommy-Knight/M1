@@ -28,8 +28,10 @@
     }
     randomNum = Math.floor(Math.random() * 76) + 1
     let button = document.getElementById("button")
+    console.log(randomNum)
     button.onclick = () =>{
         button.innerHTML = randomNum
+        bingoBoard.children[randomNum-1].classList.add("highlight") 
     }
 
 

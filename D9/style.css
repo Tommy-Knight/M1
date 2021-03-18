@@ -21,3 +21,7 @@ h1 {
 .bingoBoard{
     border: 1px solid black;
 }
+
+.highlight{
+    background-color: green;
+}
