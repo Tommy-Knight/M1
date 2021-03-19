@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+        <!--
+
+        HTML EXERCISES
+
+
+
+
+        5) Add an image to each second cell of every row
+        6) Add a anchor link for every image
+        7) Merge together 2 table cells
+        8) Divide the page using a horizontal line
+        9) Create a container with a nested paragraph and a nested unordered list
+        10) Create a footer with some information about the page creator 
+
+        CSS EXERCISES
+
+        11) Give a maximum width to the body and center it in the page
+        12) Set every h1 to be centered
+        13) Change the color of each link in the page
+        14) Create a class with a border
+        15) Set table to have rounded corners
+        16) Add margin between every paragraph
+        17) Create a class which change font size and boldness
+        18) Create a class to hide a content
+        19) Add a green border to each td
+        20) Add a dotted red border to each tr (note: tr does not accept a border property ;-) )
+
+        JS EXERCISES
+
+        21) Given variable x = "John" and y = "Doe", write on the console log "John <> Doe"
+        22) Create an object with properties such name, surname, email
+        23) Delete Email from the previously created object
+        24) Create an array with 10 strings in it
+        25) Print in the console every string in the previous array
+        26) Create an array with 100 random numbers in it
+        27) Wrote a function to get the MAX and the MIN from the previously created array
+        28) Create an array of arrays, in which every array has 10 random numbers
+        29) Create a function that gets 2 arrays and returns the longest one
+        30) Create a function that gets 2 arrays of numbers and returns the one with the higher sum of values
+
+        DOM 
+
+        31) Get element with ID "container" from the page
+        32) Get every "td" from the page
+        33) Create a cycle that prints the text inside every td of the page
+        34) Write a function to change the heading of the page
+        35) Write a function to add an extra row to the table
+        36) Write a function to add the class "test" to each row in the table
+        37) Write a function to add a red background to every link in the page
+        38) Console log "Page loaded" when the page is correctly loaded
+        39) Write a function to add new items to a UL
+        40) Write a function to empty a list
+
+        EXTRA 
+
+        41) Add an eventListener to alert when the mouse is over a link, displaying the URL
+        42) Add a button to hide every image on the page
+        43) Add a button to hide and show the table from the page
+        44) Write a function to sum every number inside the TD (if the content is numeric)
+        45) Delete the last letter from the title each time the user clicks on it
+        46) Change a single TD background color when the user clicks on it
+        47) Add a button DELETE, on click it should delete a random TD from the page
+        48) Add a pink border to a cell when the mouse is over it
+        49) Write a function to add a table with 4 rows and 3 columns programmatically
+        50) Write a function to remove the table from the page
+    -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .ex18{
+            visibility: hidden;
+        }
+        .ex17{
+            font-size: 30px;
+            font-weight: 2px;
+        }
+        p{
+            margin: 22px;
+        }
+        a{
+            color:yellow;
+            background-color: red;
+        }
+        h1{
+            text-align: center;
+        }
+        table{
+            border-radius: 6px;
+        }
+        table, th{
+            border: 1px solid;
+        }
+        td{
+            border: 6px solid green;
+            border-top: 3px dotted red;
+            border-bottom: 3px dotted red;
+            height: 50px;
+            width: 50px;
+        }
+        .elephant{
+            width: 50px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 50%;
+        }
+        .pageDivide{
+            border-bottom: 5px solid black;
+
+        }
+        .container{
+            border: 1px dotted grey;
+            display: inline-block;
+        }
+        .footer{
+            text-align: right;
+            color: grey;
+            font-size: 10px;
+        }
+        body{
+            max-width: 700px;
+            margin: 0 auto;
+        }
+    </style>
+    <title>Exercises</title>
+</head>
+<body>
+    <h1 id="h1">Practice Makes Perfect.</h1>
+    <div>
+        <ol>
+            <li>Tommy</li>
+            <li>Loves</li>
+            <li>Elephants</li>
+        </ol>
+    </div>
+    <div>
+        <table cellspacing="0" id="table">
+            <tr><td colspan="2"><a href ="https://www.natgeokids.com/uk/discover/animals/general-animals/elephant-facts/"><img class="elephant" src="https://th.bing.com/th/id/R66d69a3271d55e757f4010bdd4b88f38?rik=%2bP1yeYwr8zWahQ&riu=http%3a%2f%2fwildliferesearch.org%2fwp-content%2fuploads%2f2011%2f07%2felephantlababy-150x150.jpg&ehk=OqhTfEaXtUsUdj4k4bSQB14r6ZLN9%2faM5U9A3mR870U%3d&risl=&pid=ImgRaw"></a></td></td><td></td><td></td><td></td></tr>
+            <tr><td>oops</td><td><a href ="https://www.natgeokids.com/uk/discover/animals/general-animals/elephant-facts/"><img class="elephant" src="https://th.bing.com/th/id/R66d69a3271d55e757f4010bdd4b88f38?rik=%2bP1yeYwr8zWahQ&riu=http%3a%2f%2fwildliferesearch.org%2fwp-content%2fuploads%2f2011%2f07%2felephantlababy-150x150.jpg&ehk=OqhTfEaXtUsUdj4k4bSQB14r6ZLN9%2faM5U9A3mR870U%3d&risl=&pid=ImgRaw"></a></td><td>oops</td><td></td><td></td></tr>
+            <tr><td>oops</td><td><a href ="https://www.natgeokids.com/uk/discover/animals/general-animals/elephant-facts/"><img class="elephant" src="https://th.bing.com/th/id/R66d69a3271d55e757f4010bdd4b88f38?rik=%2bP1yeYwr8zWahQ&riu=http%3a%2f%2fwildliferesearch.org%2fwp-content%2fuploads%2f2011%2f07%2felephantlababy-150x150.jpg&ehk=OqhTfEaXtUsUdj4k4bSQB14r6ZLN9%2faM5U9A3mR870U%3d&risl=&pid=ImgRaw"></a></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td><a href ="https://www.natgeokids.com/uk/discover/animals/general-animals/elephant-facts/"><img class="elephant" src="https://th.bing.com/th/id/R66d69a3271d55e757f4010bdd4b88f38?rik=%2bP1yeYwr8zWahQ&riu=http%3a%2f%2fwildliferesearch.org%2fwp-content%2fuploads%2f2011%2f07%2felephantlababy-150x150.jpg&ehk=OqhTfEaXtUsUdj4k4bSQB14r6ZLN9%2faM5U9A3mR870U%3d&risl=&pid=ImgRaw"></a></td><td></td><td></td><td>oops</td></tr>
+        </table> 
+    </div>
+        
+    <div class="pageDivide"><p> ↓ This line divides the page ↓</p></div>
+    <div id="container" class="container">
+        <p>How to pronounce elephant:</p>
+        <ul id="ul"><li>el</li><li>ee</li><li>fun</li><li>t</li></ul>
+        <button id="button">Click here to clear the list!</button>
+        <a href="https://www.google.com">Click here for a great engine.</a>
+    </div>
+    <footer class="footer">Here's a fun fact about Tommy: he likes elephants.</footer>
+    <script>
+        let x= "John"
+        let y= "Doe"
+        console.log(`${x} <> ${y}`)
+        let obj ={
+            name: "Tommy",
+            surname: "Knight",
+            hobbies: "being friendly"
+        }
+        delete(obj.hobbies)
+        console.log(obj)
+
+        let myArray = []
+        for (i=0; i<10; i++){
+            myArray.push(`string ${i}`)
+        }
+        console.log(myArray)
+        let longArray = []
+        for(i=0; i<100; i++){
+            let randomNum = Math.floor(Math.random()*100)+1
+            longArray.push(randomNum)
+        }
+        console.log(longArray)
+        let max = longArray[0]
+        for (let i = 1; i < longArray.length; ++i) {
+            if (longArray[i] > max) {
+                max = longArray[i]
+            }
+        }
+        console.log(max)
+        let min = longArray[0]
+        for (i=0; i < longArray.length; i++) {
+            if (longArray[i] < min) {
+                min = longArray[i]
+            }
+        }
+        console.log(min)
+        let arrayMatrix = []
+        for(i=0; i<10; i++){
+            arrayMatrix.push(myArray)
+        }
+        console.log(arrayMatrix)
+        let hisArray = [1,2,3]
+        let herArray = [1,2,3,4]
+        hisArray.length>herArray.length? console.log ("his is bigger"): console.log("hers is bigger") 
+        let biggestArraySum = (x,y)=>{
+            x.reduce()                 //would like some advice on using the reduce function, had trouble
+        }
+        const container = document.getElementById("container")
+        let td = document.getElementsByTagName("td")
+        for( i=0; i<td.length;i++){
+        console.log((i+1)+ ":" + td[i].innerHTML)
+        }
+        const changeHeader = (n)=>{
+            let oldHeader = document.getElementById("h1")
+            oldHeader.innerHTML = n
+        }
+        changeHeader("GUESS WHAT TOMMY LOVES")
+        const addRow = ()=>{
+        let table = document.getElementById("table")
+        let newRow = table.insertRow()
+        let newCell= newRow.insertCell()
+        let newText = document.createTextNode("new row →")
+        newCell.appendChild(newText)
+        }
+        addRow()
+        const testRow = ()=>{
+            let allRows = Array.from(document.getElementsByTagName("tr"))
+            allRows.forEach( n=>{
+                n.classList.add("test")
+            })
+            console.log(allRows)
+        }
+        testRow()
+        window.onload = ()=>{
+            console.log("Page Loaded")
+        }
+        uL = document.getElementById("ul")
+        uL.onclick = ()=>{
+            newLi = document.createElement("li")
+            uL.appendChild(newLi)
+        }
+        let button = document.getElementById("button")
+        button.onclick = ()=>{
+        uL.remove("ul")
+        }
+    </script>
+</body>
+</html>
