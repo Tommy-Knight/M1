@@ -1,0 +1,48 @@
+      /* EXERCISE 1
+            For all Albums we'd like to have a consistent style.
+            Create a class for:
+            - The album container
+            - The album cover
+            - The album title
+            - The album group / singer / dj
+            - The album genre
+            - The album duration
+            - etc
+         */
+
+body{
+    background-image: url(https://i.pinimg.com/originals/03/d9/93/03d99354f301930c15881732fd1e53fd.jpg);
+    background-position: top;
+}
+.container{
+    background-color: lightgrey;
+    border: 3px double black;
+    padding: 10px;
+}
+.title{
+    text-align: center;
+    font-size: 25px !important;
+    padding: 20px;
+}
+img{
+    width: 200px;
+    padding: 10px;
+
+}
+#bio{
+    background-color: lightgrey;
+    border: 3px double black;
+    margin: 50px;
+}
+#rock{
+    width: 100px;
+    height: 100px;
+}
+#fav{
+    font-size: 10px;
+    margin: 50px;
+}
+#naf{
+    font-size: 10px;
+    margin: 50px;
+}
