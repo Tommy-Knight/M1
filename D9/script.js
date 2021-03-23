@@ -1,4 +1,5 @@
 const bingoBoard = document.getElementById("bingoBoard")
+const checklist = []
 const createBoard = ()=>{
     for(let i=0; i<76; i++) {
         const cell = document.createElement("div")
@@ -7,7 +8,6 @@ const createBoard = ()=>{
         bingoBoard.appendChild(cell)
     }   
 }
-const checklist = []
 button.onclick = ()=>{
     const button = document.getElementById("button")
     let randomNum = Math.floor(Math.random() * 76) + 1

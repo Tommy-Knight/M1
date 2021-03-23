@@ -138,8 +138,7 @@ element.textContent =               // all content within element tags
 element.innerText =                 // checks content for css visibility etc. before returning what's in the tag
 element.innerHTML =                 // to add html with a string element.innerHTML ="<em> wow </em>"   //prone to security flaws?
 
-// tip: using array.from(document.querySelectorAll()) will let you use a .forEach statement with the list of nodes for if you hate using loops like me.
-
+// array.from(document.querySelectorAll()) calls iterable array
 
 // Additionally:
 
